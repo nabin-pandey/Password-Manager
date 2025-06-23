@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PasswordManager {
     private List<Credential> credentials;
-    private static final String FILE_NAME = "credentials.txt";
+    private static final String FILE_NAME = "credentials.enc";
 
 
     public PasswordManager() {

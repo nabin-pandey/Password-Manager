@@ -1,39 +1,78 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+############################################
+# OS Files
+############################################
+.DS_Store
+Thumbs.db
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+############################################
+# IDEs
+############################################
+
+# IntelliJ IDEA
+.idea/
 *.iws
-*.iml
 *.ipr
-*.xml
+*.iml
+# Keep shared code styles and inspections
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# Eclipse
 .project
-.settings
+.classpath
+.settings/
+.apt_generated/
+.factorypath
 .springBeans
 .sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
-.DS_Store
+############################################
+# Build System Outputs
+############################################
+
+# Maven
+/target/
+
+# Gradle
+.gradle/
+build/
+
+# Ignore wrapper logs but keep wrappers
+gradle-app.setting
+gradle-wrapper.properties
+gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Maven Wrapper
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+############################################
+# Logs
+############################################
+*.log
+
+############################################
+# Environment & Config Files
+############################################
+.env
+*.env
+
+############################################
+# Others
+############################################
+*.bak
+*.swp
+*.tmp
