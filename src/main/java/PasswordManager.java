@@ -8,7 +8,7 @@ public class PasswordManager {
     private List<Credential> credentials;
     private static final String FILE_NAME = "credentials.txt";
 
-    // Constructor
+
     public PasswordManager() {
         credentials = new ArrayList<>();
         loadCredentialsFromFile();
