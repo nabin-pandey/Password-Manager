@@ -29,11 +29,11 @@ public class Main {
 
                     Credential c = new Credential(website, username, password);
                     manager.addCredential(c);
-                    System.out.println("✅ Credential saved.");
+                    System.out.println(" Credential saved.");
                     break;
 
                 case "2":
-                    System.out.println("🔐 Saved Credentials:");
+                    System.out.println(" Saved Credentials:");
                     manager.showAllCredentials();
                     break;
 
